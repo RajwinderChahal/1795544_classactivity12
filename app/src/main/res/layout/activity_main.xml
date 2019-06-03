@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_reg"
+        android:layout_width="68dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Register"
+        app:layout_constraintBottom_toTopOf="@+id/edt_fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edt_fname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:hint="enter fname"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_lname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_reg" />
+
+
+    <EditText
+        android:id="@+id/edt_lname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:hint="enter_lname"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fname" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+
+        android:hint="enter_email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_lname" />
+
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="138dp"
+        android:layout_height="68dp"
+
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="345dp" />
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/pic"
+        app:layout_constraintBottom_toTopOf="@+id/txt_reg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
